@@ -6,13 +6,7 @@ import com.unity3d.ads.android.IUnityAdsListener;
 /**
  * Created by solomonli on 4/25/16.
  */
-public class TestNDK {
-
-//    public static  void initAd() {
-//        Log.d("[Ads Test]", "initializing ad");
-//        UnityAds.setTestMode(true);
-//        UnityAds.init((Activity) this, "1044314", (IUnityAdsListener) this);
-//    }
+public class UnityAdsNDK {
 
     public static native void reward(String placementId);
 

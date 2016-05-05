@@ -11,14 +11,14 @@
 #define LOG_TAG    "UnityAdsJni"
 #define LOGD(...)  __android_log_print(ANDROID_LOG_DEBUG,LOG_TAG,__VA_ARGS__)
 
-#define CLASS_NAME "org/cocos2dx/cpp/TestNDK"
+#define CLASS_NAME "org/cocos2dx/cpp/UnityAdsNDK"
 
 using namespace cocos2d;
 
 #ifdef __cplusplus
 extern "C" {
 #endif
-    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_TestNDK_reward (JNIEnv * env, jobject jobj, jstring zoneid)
+    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_UnityAdsNDK_reward (JNIEnv * env, jobject jobj, jstring zoneid)
     {
         char* ret = NULL;
 		ret = jstringTostring(env, zoneid);

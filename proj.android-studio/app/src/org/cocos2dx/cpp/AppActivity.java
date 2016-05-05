@@ -26,20 +26,11 @@ package org.cocos2dx.cpp;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Window;
-import android.view.WindowManager;
 
-import com.chukong.cocosplay.client.CocosPlayClient;
 import com.unity3d.ads.android.IUnityAdsListener;
 import com.unity3d.ads.android.UnityAds;
-import com.unity3d.ads.android.webapp.IUnityAdsWebDataListener;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
-import org.cocos2dx.lib.Cocos2dxEditBoxHelper;
-import org.cocos2dx.lib.Cocos2dxHandler;
-import org.cocos2dx.lib.Cocos2dxHelper;
-import org.cocos2dx.lib.Cocos2dxVideoHelper;
-import org.cocos2dx.lib.Cocos2dxWebViewHelper;
 
 public class AppActivity extends Cocos2dxActivity implements IUnityAdsListener {
 
@@ -47,7 +38,6 @@ public class AppActivity extends Cocos2dxActivity implements IUnityAdsListener {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initAd();
-        //UnityAds.changeActivity(this);
     }
 
     @Override
@@ -63,17 +53,6 @@ public class AppActivity extends Cocos2dxActivity implements IUnityAdsListener {
         UnityAds.init((Activity) this, "1044314", (IUnityAdsListener) this);
     }
 
-    private void showAd(){
-
-        Log.d("[Ads Test]", "clicked on show ad button");
-
-        UnityAds.setZone("rewardedVideo");
-
-        if(UnityAds.canShow()) {
-            UnityAds.show();
-        }
-    }
-
     public void onHide(){
         Log.d("[Ads Test Lifecycle]", "onHide");
     }
@@ -87,13 +66,12 @@ public class AppActivity extends Cocos2dxActivity implements IUnityAdsListener {
     }
 
     public  void onVideoCompleted(String itemKey, boolean skipped){
-        TestNDK.reward("rewardedVideo");
+        UnityAdsNDK.reward("rewardedVideo");
         Log.d("[Ads Test Lifecycle]", "[onVideoCompleted] with key="+itemKey+", and skipped="+skipped);
     }
 
     public void onFetchCompleted(){
         Log.d("[Ads Test Lifecycle]", "onFetchCompleted");
-        //showAd();
     }
 
     public void onFetchFailed(){

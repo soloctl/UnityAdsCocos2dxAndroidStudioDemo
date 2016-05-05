@@ -11,7 +11,7 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_TestNDK_reward (JNIEnv *, jobject, jstring s);
+    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_UnityAdsNDK_reward (JNIEnv *, jobject, jstring s);
     static char* jstringTostring(JNIEnv* env, jstring jstr);
     extern bool canShowJni();
     extern void showJni();
