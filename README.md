@@ -215,9 +215,104 @@ Import UnityAds to your **AppActivity**
 
 
 
+### Reward the player - Call native functions from Android
+We just update text from "Hello World" to "Rewarded" this time.
+
+  1. Add reward api in **UnityAdsBridge.h** header file.
+  
+  ```Cpp
+    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_UnityAdsNDK_reward (JNIEnv *, jobject, jstring s);
+    static char* jstringTostring(JNIEnv* env, jstring jstr);
+  ```
+  2. Add reward implementation in the **UnityAdsBridge.cpp** file.
+  
+  ```Cpp
+    JNIEXPORT void JNICALL Java_org_cocos2dx_cpp_UnityAdsNDK_reward (JNIEnv * env, jobject jobj, jstring zoneid)
+    {
+        char* ret = NULL;
+		ret = jstringTostring(env, zoneid);
+
+        LOGD("placement id = %s", ret);
+
+        auto scene = Director::getInstance()->getRunningScene()->getChildren().at(1);
+        if (typeid(*scene) == typeid(HelloWorld)) {
+            static_cast<HelloWorld*>(scene)->rewardPlayer(ret);
+        } else {
+            LOGD("gameScene is still NULL");
+        }
+    }
+	static char* jstringTostring(JNIEnv* env, jstring jstr)
+	{
+		char* rtn = NULL;
+
+		// convert jstring to byte array
+		jclass clsstring = env->FindClass("java/lang/String");
+		jstring strencode = env->NewStringUTF("utf-8");
+		jmethodID mid = env->GetMethodID(clsstring, "getBytes", "(Ljava/lang/String;)[B");
+		jbyteArray barr= (jbyteArray)env->CallObjectMethod(jstr, mid, strencode);
+		jsize alen =  env->GetArrayLength(barr);
+		jbyte* ba = env->GetByteArrayElements(barr, JNI_FALSE);
+
+		// copy byte array into char[]
+		if (alen > 0)
+		{
+			rtn = new char[alen + 1];
+			memcpy(rtn, ba, alen);
+			rtn[alen] = 0;
+		}
+		env->ReleaseByteArrayElements(barr, ba, 0);
+
+		return rtn;
+	}
+  ```
+  
+  3. Add native reward api call in Android layer when video completed.
+  Add native interface in **`UnityAdsNDK`** class.
+  
+  ```Java
+  public static native void reward(String placementId);
+  ```
+  Add call of the native interface in **`AppActivity`** class.
+  
+  ```Java
+    public  void onVideoCompleted(String itemKey, boolean skipped){
+        UnityAdsNDK.reward("rewardedVideo");
+        Log.d("[Ads Test Lifecycle]", "[onVideoCompleted] with key="+itemKey+", and skipped="+skipped);
+    }
+  ```
+  
+  4. Update game logic update label text from "Hello World" to "Rewarded".
+  Add **`rewardPlayer`** interface in **HelloWorld** C++ header.
+  
+  ```Cpp
+    void rewardPlayer(char* rewardId);
+  ```
+  Upgrade "Hello World" label to a private field in **HelloWorld** C++ header.
+  
+  ```Cpp
+  private:
+    cocos2d::Label* _label;
+  ```
+  Change the declaration and use of label to use _label in **HelloWorld** C++ class.
+  
+  ```Cpp
+    _label = Label::createWithTTF("Hello World", "fonts/Marker Felt.ttf", 60);
+    
+    _label->setPosition(Vec2(origin.x + visibleSize.width/2,
+                            origin.y + visibleSize.height - _label->getContentSize().height));
+
+    this->addChild(_label, 1);
+  ```
+  Add implementation of **`rewardPlayer `** function in **HelloWorld** C++ class.
+  
+  ```Cpp
+	void HelloWorld::rewardPlayer(char* rewardId) {
+	    _label->setString("Rewarded!");
+	}
+  ```
 
 
 
-Finally, we finished a rewarded video. Player would enjoy more after watching a video for an extra life in the next play.
+Finally, we finished a rewarded video. 
 
-For more information, check out the [iOS Integration Guide](http://unityads.unity3d.com/help/monetization/integration-guide-ios), the [support Forum](http://forum.unity3d.com/forums/unity-ads.67/), or contact unityads-sales@unity3d.com
+For more information, check out the [Android Integration Guide](http://unityads.unity3d.com/help/monetization/integration-guide-android), the [support Forum](http://forum.unity3d.com/forums/unity-ads.67/), or contact unityads-sales@unity3d.com

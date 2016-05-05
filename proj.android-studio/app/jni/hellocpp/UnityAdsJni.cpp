@@ -27,7 +27,6 @@ extern "C" {
 
         auto scene = Director::getInstance()->getRunningScene()->getChildren().at(1);
 
-        //    if (scene->getName() == "MainScene") {  // これでもよい
         if (typeid(*scene) == typeid(HelloWorld)) {
             static_cast<HelloWorld*>(scene)->rewardPlayer(ret);
         } else {

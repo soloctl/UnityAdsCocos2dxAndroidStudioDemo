@@ -2,32 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acd45ff1-f8f1-491f-a580-5341e00795d2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/TestNDK.java" afterPath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/UnityAdsNDK.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/debug/classes.jar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/debug/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/debug/libs/android-async-http-1.4.8.jar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/debug/libs/android-async-http-1.4.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/release/classes.jar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/release/classes.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/release/libs/android-async-http-1.4.8.jar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/bundles/release/libs/android-async-http-1.4.8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/compileDebugAidl/dependency.store" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/compileDebugAidl/dependency.store" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/compileReleaseAidl/dependency.store" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/compileReleaseAidl/dependency.store" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/res/resources-debug-androidTest.ap_" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/res/resources-debug-androidTest.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/outputs/aar/libcocos2dx-debug.aar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/outputs/aar/libcocos2dx-debug.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/outputs/aar/libcocos2dx-release.aar" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/outputs/aar/libcocos2dx-release.aar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/UnityAdsJni.h" afterPath="$PROJECT_DIR$/Classes/UnityAdsJni.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" afterPath="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/generated/source/aidl/debug/com/enhance/gameservice/IGameTuningService.java" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/generated/source/aidl/debug/com/enhance/gameservice/IGameTuningService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/generated/source/aidl/release/com/enhance/gameservice/IGameTuningService.java" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/generated/source/aidl/release/com/enhance/gameservice/IGameTuningService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAndroidTestAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeReleaseAssets/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeReleaseAssets/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/packageDebugResources/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/packageDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/packageReleaseResources/merger.xml" afterPath="$PROJECT_DIR$/cocos2d/cocos/platform/android/libcocos2dx/build/intermediates/incremental/packageReleaseResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android-studio/app/MyGame.iml" afterPath="$PROJECT_DIR$/proj.android-studio/app/MyGame.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp" afterPath="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java" afterPath="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java" />
     </list>
     <ignored path="MyGame.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,40 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UnityAdsJni.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/UnityAdsJni.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Android.mk" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/proj.android-studio/app/jni/Android.mk">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16974169">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UnityAdsJni.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0370371">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorldScene.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HelloWorldScene.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223">
+            <state vertical-scroll-proportion="0.24590164">
               <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
@@ -91,8 +38,8 @@
       <file leaf-file-name="HelloWorldScene.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+            <state vertical-scroll-proportion="-4.314815">
+              <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -118,9 +65,9 @@
         <option value="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java" />
         <option value="$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/TestNDK.java" />
         <option value="$PROJECT_DIR$/Classes/HelloWorldScene.h" />
-        <option value="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
-        <option value="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp" />
         <option value="$PROJECT_DIR$/Classes/UnityAdsJni.h" />
+        <option value="$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp" />
+        <option value="$PROJECT_DIR$/Classes/HelloWorldScene.cpp" />
       </list>
     </option>
   </component>
@@ -132,8 +79,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="500" />
-    <option name="y" value="103" />
+    <option name="x" value="529" />
+    <option name="y" value="84" />
     <option name="width" value="956" />
     <option name="height" value="768" />
   </component>
@@ -229,6 +176,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UnityAdsCocos2dxAndroidStudioDemo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="proj.android-studio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cocos2dx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cpp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -569,7 +550,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="500" y="103" width="956" height="768" extended-state="0" />
+    <frame x="529" y="84" width="956" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -909,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proj.android-studio/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -947,52 +920,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proj.android-studio/app/jni/Android.mk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4188192">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/AppActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19372694">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proj.android-studio/app/src/org/cocos2dx/cpp/UnityAdsNDK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.44280443">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proj.android-studio/app/jni/hellocpp/UnityAdsJni.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0370371">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.13015184">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Classes/UnityAdsJni.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.46106556">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/proj.android-studio/app/jni/Android.mk">
+    <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16974169">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="18" selection-end-column="42" />
+        <state vertical-scroll-proportion="-4.314815">
+          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/HelloWorldScene.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24590164">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
